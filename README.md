@@ -1,2 +1,2 @@
 # CD-Hackathon
-###By Cindy and Daniel
+By Cindy and Daniel
