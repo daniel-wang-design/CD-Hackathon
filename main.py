@@ -39,4 +39,3 @@ def main():
     arcade.run()
 
 main()
-
