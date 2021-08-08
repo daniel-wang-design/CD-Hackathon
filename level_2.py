@@ -4,7 +4,7 @@ width = 800
 height = 400
 title = "Test"
 
-class Main(arcade.Window):
+class Level_2(arcade.Window):
     """
     Main game application class
     """
@@ -12,6 +12,10 @@ class Main(arcade.Window):
         super().__init__(width, height, title)
         arcade.set_background_color(arcade.color.LIGHT_STEEL_BLUE)
         self.sprite_list = arcade.SpriteList()
+
+    def on_mouse_press(self, x: float, y: float, button: int, modifiers: int):
+        pressed_item = arcade.get_sprites_at_point((x,y), self.sprite_list)
+        if len(pressed_item) > 0:
 
 
     def setup(self):
@@ -32,7 +36,7 @@ class Trash(arcade.Sprite):
 
 def main():
     # main method
-    window = Main()
+    window = Level_2()
     window.setup()
     arcade.run()
 

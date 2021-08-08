@@ -27,16 +27,13 @@ class Main(arcade.Window):
 
     def __init__(self):
         super().__init__(width, height, title)
-        self.alltrash = None
         arcade.set_background_color(arcade.color.LIGHT_STEEL_BLUE)
-        self.trash = None
-        self.trash_original_position = None
 
     def setup(self):
         self.trash = []
         self.trash_original_position = []
         self.alltrash = arcade.SpriteList()
-        mask.position = 50, 50
+        # mask.position = 50, 50
 
     def on_draw(self):
         arcade.start_render()
@@ -65,6 +62,5 @@ def main():
     window.setup()
     arcade.run()
 
-if __name__ == "__main__":
-    main()
+main()
 
