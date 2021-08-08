@@ -30,7 +30,7 @@ class Main(arcade.Window):
         self.pile_mat_list.append(pile)
 
         self.piles = [[] for _ in range(3)]
-        
+
         greenbin = Trash("images/8.png", 0.5)
         bins.set_position(400,200)
         egg = Trash("images/3.png", 0.1)

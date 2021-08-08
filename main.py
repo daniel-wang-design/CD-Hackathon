@@ -1,5 +1,4 @@
 import arcade
-import random
 
 width = 1440
 height = 844
