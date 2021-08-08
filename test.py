@@ -15,9 +15,12 @@ class Main(arcade.Window):
 
 
     def setup(self):
-        temp = Trash("images/3.png", 0.5)
-        temp.set_position(0,0 )
-        self.sprite_list.append(temp)
+        bins = Trash("images/8.png", 0.5)
+        bins.set_position(400,200)
+        egg = Trash("images/3.png", 0.1)
+        egg.set_position(100,100)
+        self.sprite_list.append(egg)
+        self.sprite_list.append(bins)
 
     def on_draw(self):
         arcade.start_render()
